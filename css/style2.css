@@ -543,3 +543,47 @@ footer.bg-pattern{background-position: center 125px; padding-bottom: 50px;}
 .copyright ul li:before{content: ""; position: absolute; top: 7px; right: 0; width: 2px; height: 12px;}
 .copyright ul li:last-child:before{width: 0;}
 /*----- Footer Section End -----*/
+
+/*--- Tokenomics Table ---*/
+.tokenomics-table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.tokenomics-table thead {
+  text-transform: uppercase;
+}
+
+.tokenomics-table th,
+.tokenomics-table td {
+  font-size: 16px;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid #ffffff22;
+}
+
+@media (max-width: 480px) {
+  .tokenomics-table thead {
+    display: none;
+  }
+
+  .tokenomics-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ffffff22;
+  }
+
+  .tokenomics-table td {
+    display: flex;
+    padding-top: 0;
+    border: 0;
+  }
+
+  .tokenomics-table td::before {
+    content: attr(data-title);
+    flex: 0 0 50%;
+    text-align: right;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-right: 2rem;
+  }
+}
