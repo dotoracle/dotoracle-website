@@ -392,3 +392,16 @@ if ($("#map").length > 0) {
 }
 
 /* -------- Google Map End --------*/
+
+/* -------- News Carousel --------*/
+if ($("#news-carousel").length > 0) {
+    $("#news-carousel").owlCarousel({
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        loop: true
+    })
+}
+/* -------- News Carousel --------*/
+
