@@ -95,7 +95,7 @@ $(function() {
                     margin: 0
                 },
                 1200: {
-                    items: 5,
+                    items: 4,
                     loop: true,
                     nav: false,
                     margin: 0
